@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist-files
       - name: Get code
@@ -46,4 +46,4 @@ jobs:
       - name: Output contents
         run: ls
       - name: Deploy
-        run: echo "Deploying V3..."
+        run: echo "Deploying ..."
